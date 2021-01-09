@@ -1,8 +1,14 @@
 'use strict'
+var score =0;
+var total;
+var correctanswer = 55;
+var attempts = 4;
+var guesses = 0;
+var count = 0;
 var userName = prompt('who is speaking !?');
 alert(' welcome ' + userName + ' to my little page ');
 
-function guessmyNum(){
+
 
 var myname = prompt('my name is batool .. is that correct ?');
 if (myname.toLowerCase() === 'y' || myname.toLowerCase() === 'yes') {
@@ -12,6 +18,8 @@ if (myname.toLowerCase() === 'y' || myname.toLowerCase() === 'yes') {
 else if (myname.toLowerCase() === 'n' || myname.toLowerCase() === 'no') {
     //console.log('correct answer');
     alert(' correct answer , thank you walla')
+    score++;
+
 
 }
 else {
@@ -26,6 +34,8 @@ if (myfavclub.toLowerCase() === 'y' || myfavclub.toLowerCase() === 'yes') {
 else if (myfavclub.toLowerCase() === 'n' || myfavclub.toLowerCase() === 'no') {
     //console.log('correct answer .. finally :D');
     alert(' correct answer , you should become a madridista :D')
+    score++;
+
 }
 else {
     alert('invalid input');
@@ -35,6 +45,8 @@ var myfavmeal = prompt(' do you love MANSAF ?');
 if (myfavmeal.toLowerCase() === 'y' || myfavmeal.toLowerCase() === 'yes') {
     //console.log('correct answer ');
     alert(' correct answer , me too :D ')
+    score++;
+
 }
 else if (myfavmeal.toLowerCase() === 'n' || myfavmeal.toLowerCase() === 'no') {
     //console.log('kef 3aysheh ente ? ');
@@ -47,6 +59,7 @@ var myfavplayer = prompt(' is my favorite player is zidane ?');
 if (myfavplayer.toLowerCase() === 'y' || myfavplayer.toLowerCase() === 'yes') {
    // console.log('correct answer ');
     alert(' correct answer , he is the best of all time ')
+    score++;
 }
 else if (myfavplayer.toLowerCase() === 'n' || myfavplayer.toLowerCase() === 'no') {
     //console.log('laaaa3333 ');
@@ -59,6 +72,7 @@ var thisisyours = prompt(' is your favorite color is blue ? ');
 if (thisisyours.toLowerCase() === 'y' || thisisyours.toLowerCase() === 'yes') {
     //console.log('correct answer ');
     alert(' correct answer , also me :D ')
+    score++;
 }
 else if (thisisyours.toLowerCase() === 'n' || thisisyours.toLowerCase() === 'no') {
     //console.log('its ok ');
@@ -69,12 +83,7 @@ else {
 }
 alert(' thank you for your time ' + userName )
 alert(' you have 4 attempts to get the correct answer.')
-var score =0;
-var total;
-var correctanswer = 55;
-var attempts = 4;
-var guesses = 0;
-var count = 0;
+
 
     for (var i = 4; i>0 ; i--){
         var guess = prompt('can you guess my favorite number ? ' + i + ' attempts ')
@@ -112,4 +121,6 @@ for (var i=1; i<=6;i++){
 
 alert('my best players is '  + players);
 alert('your score is ' + score);
+function guessmyNum(){
+
 }
